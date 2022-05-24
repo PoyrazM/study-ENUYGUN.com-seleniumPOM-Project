@@ -44,22 +44,22 @@ public class BaseTest{
     public void definitionSelect(){
         home.selectDefinition("İstanbul");
     }
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void dateSelect(){
         home.selectDate();
     }
-    @Test(priority = 5)
+    @Test(priority = 4)
     public void clickFindButton(){
         home.clickButton();
     }
 
-    @Test(priority = 6)
+    @Test(priority = 5)
     public void clickTicketButton(){
         ticket = new TicketSearchPage(driver);
         ticket.ticketFind();
     }
 
-    @Test(priority = 7)
+    @Test(priority = 6)
     public void getPayPageText(){
         reservationPage = new ReservationPage(driver);
         reservationPage.getPageText();
